@@ -7,14 +7,17 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "heroku-postbuild": "ng build --prod"
+    "heroku-postbuild": "ng build --prod",
+    "postinstall": "ng build --aot --target=production"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "~13.3.0",
     "@angular/cdk": "^13.3.7",
+    "@angular/cli": "~13.3.5",
     "@angular/common": "~13.3.0",
     "@angular/compiler": "~13.3.0",
+    "@angular/compiler-cli": "~13.3.0",
     "@angular/core": "~13.3.0",
     "@angular/flex-layout": "^13.0.0-beta.38",
     "@angular/forms": "~13.3.0",
@@ -28,6 +31,7 @@
     "popper.js": "^1.16.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
+    "typescript": "~4.6.2",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
@@ -45,7 +49,19 @@
     "typescript": "~4.6.2"
   },
   "engines": {
-    "node": "12.18.2",
-    "npm": "6.14.5"
-  }
+    "node": "14.17.5",
+    "npm": " 6.14.14"
+  },
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.",
+  "main": "karma.conf.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swamirupali/my-app-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/swamirupali/my-app-demo/issues"
+  },
+  "homepage": "https://github.com/swamirupali/my-app-demo#readme"
 }
